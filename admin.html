@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iStore - Apple Expreince</title>
+    <!-- <script src="app.js" defer></script> -->
+    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./image/Без названия.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="admin.js" defer></script>
+
+</head>
+
+<body>
+    <!-- hedaer section -->
+    <div class="container relative">
+        <div class="flex justify-between items-center w-[100%] bg-[#ffffffb3] backdrop-blur-lg px-20 py-4 fixed z-50 border-b-1"
+            id="navigation">
+            <div id="logo" class="w-[30%] pl-[130px]">
+                <a href="index.html" class="text-[#0071e3]">
+                    <i class="fa-brands fa-apple"></i>
+                </a>
+            </div>
+            <div id="nav-center" class="w-[30%]">
+                <ul class="flex w-[100%] gap-10 text-[#1d1d1f] text-[12px]" id="nav-ul">
+                    <li class="nav-li">
+                        <a href="#" class="text-amber-700">Store</a>
+                    </li>
+                    <li class="nav-li">
+                        <a href="#">Mac</a>
+                    </li>
+                    <li class="nav-li">
+                        <a href="#">iPad</a>
+                    </li>
+                    <li class="nav-li">
+                        <a href="#">iPhone</a>
+                    </li>
+                    <li class="nav-li">
+                        <a href="#">Watch</a>
+                    </li>
+                    <li class="nav-li">
+                        <a href="#">Support</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div id="nav-right" class="w-[30%] pl-[160px] flex items-center gap-4">
+                <i class="fa-solid fa-moon cursor-pointer" id="darkmode"></i>
+                <button class="bg-black text-white  text-[11px] rounded-2xl py-1 cursor-pointer w-[70px]">
+                    <a href="admin.html" class="cursor-pointer" id="admin-btn">Admin</a>
+                </button>
+            </div>
+        </div>
+    </div>
+    <!-- /header section -->
+
+    <!-- main section -->
+    <div class="container">
+        <div id="admin-main" class="pt-[120px] flex justify-center gap-7 w-[100%] pb-10 bg-[#f5f5f7] h-auto">
+            <div id="product-add" class="w-[380px] h-auto bg-white p-7 rounded-4xl">
+                <h2 class="font-semibold text-[24px] text-[#1d1d1f] pb-5" id="mahsulot">Mahsulot qo'shish</h2>
+
+                <form class="w-[100%]" id="form">
+                    <label class="text-[14px] text-[#6e6e73] font-semibold mt-3" for="name">Nomi</label><br>
+                    <input class="p-[14px] outline-0 bg-[#f5f5f7] w-[100%] rounded-2xl mt-3" type="text"
+                        placeholder="iPhone 15 Pro" id="title"><br><br>
+
+                    <label class="text-[14px] text-[#6e6e73] font-semibold " for="name">Narxi ($)</label><br>
+                    <input class="p-[14px] outline-0 bg-[#f5f5f7] w-[100%] rounded-2xl mt-3" type="number"
+                        placeholder="999" id="price"><br><br>
+
+                    <label class="text-[14px] text-[#6e6e73] font-semibold mt-3" for="name">RASM URL</label><br>
+                    <input class="p-[14px] outline-0 bg-[#f5f5f7] w-[100%] rounded-2xl mt-3" type="url"
+                        placeholder="https://rasm-linki"><br><br>
+
+                    <label class="text-[14px] text-[#6e6e73] font-semibold mt-3 " for="name">KATEGORIYA</label><br>
+                    <select name="" id="select-product"
+                        class="p-[14px] outline-0 bg-[#f5f5f7] w-[100%] rounded-2xl mt-3">
+                        <option value="">Iphone</option>
+                        <option value="">Macbook</option>
+                        <option value="">Watch</option>
+                        <option value="">AirPods</option>
+                    </select>
+
+                    <button id="product-add-btn"
+                        class="w-[100%] bg-[#0071e3] p-[15px] rounded-[25px] mt-15 text-white">Ro'yxatga
+                        qo'shish</button>
+                </form>
+            </div>
+
+            <div id="existing-product" class="w-[700px] h-auto bg-white rounded-4xl p-7">
+                <h2 class="font-semibold text-[24px] text-[#1d1d1f] pb-5" id="mahsulot">Mavjud Mahsulotlar</h2>
+
+                <div class="py-6 px-9 flex justify-between">
+                    <p class="font-bold text-[12px] text-[#6e6e73]">Mahsulot</p>
+                    <div class="flex gap-27">
+                        <p class="font-bold text-[12px] text-[#6e6e73]"> Narxi</p>
+                        <p class="font-bold text-[12px] text-[#6e6e73]"> Amal</p>
+                    </div>
+                </div>
+                <ul id="product-ul" class="w-[100%] flex flex-col gap-8">
+
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- / main section -->
+
+    <!-- footer section -->
+    <div class="container">
+        <div class="flex flex-col items-center w-[100%] py-[70px] border-t-1 b" id="footer">
+            <p class="font-normal text-[12px] text-[#575758]">Copyright © 2026 iStore Uzbekistan. Barcha huquqlar
+                himoyalangan.</p>
+            <p class="font-normal text-[12px] text-[#6e6e73] pt-3">O'zbekiston | Maxfiylik siyosati | Sayt xaritasi</p>
+        </div>
+    </div>
+    <!-- /footer section -->
+</body>
+
+</html>

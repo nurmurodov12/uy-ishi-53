@@ -1,0 +1,48 @@
+@import url(https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;800;900&display=swap);
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+#header-learn:hover{
+    text-decoration: underline;
+}
+
+#product-top img{
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+#product{
+    transition: transform .3s ease-in-out, box-shadow .3s;
+}
+#product:hover {
+    cursor: pointer;
+    transform: translateY(-8px);
+    box-shadow: 0 12px 20px rgba(0,0,0,0.2); 
+    overflow: hidden;
+}
+#product:hover img{
+    transform: scale(1.1);
+    transition: all 0.5s ease-in-out;
+}
+
+.dark{
+    background-color: black ;
+    position: relative;
+    z-index: 100;
+    color: white;
+}
+
+.product-for{
+    background-color: black;
+    color: white;
+}
+.li-style{
+    color: white;
+}
+.product-add-for {
+    background-color: #161617B3;
+    border: 1px solid;
+    color: white;
+
+}
