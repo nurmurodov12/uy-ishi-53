@@ -12,7 +12,7 @@ console.log();
 
 
 
-const fetchApi = "https://69080b1eb49bea95fbf23575.mockapi.io/api/v1/shop"
+const fetchApi = "https://69c558688a5b6e2dec2c41b6.mockapi.io/imtihon"
 fetchData()
 
 async function fetchData() {
@@ -23,8 +23,6 @@ async function fetchData() {
     } catch (error) {
         alert(error)
     }
-
-
 
 }
 
